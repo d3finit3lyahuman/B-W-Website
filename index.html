@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome.</title>
+    <link rel="stylesheet" href="css\homestyle.css" />
+    <script src="/main.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+  </head>
+  <body>
+    <div class="background">
+      <div class="menu-bar">
+        <nav>
+          <input type="checkbox" id="check" />
+          <label for="check">
+            <i data-feather="menu" id="btn"></i>
+            <i data-feather="x" id="cancel"></i>
+          </label>
+          <ul>
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/about.html">About</a></li>
+            <li><a href="/contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="container">
+        <h1>
+          Hello,
+          <span
+            class="txt-type"
+            data-wait="3000"
+            data-words='["My name is Okorie", "Welcome to My Website"]'
+          ></span>
+        </h1>
+        <h2>Let's get started...</h2>
+      </div>
+      
+    </div>
+  </body>
+
+  <script>
+    feather.replace();
+  </script>
+
+</html>

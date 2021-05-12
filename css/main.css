@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Megrim&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Pinyon+Script&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+nav {
+  height: 65px;
+}
+
+nav ul {
+  float: right;
+  margin-right: 25px;
+}
+
+nav ul li {
+  font-family: Megrim, Cambria, sans-serif;
+  display: inline-block;
+  line-height: 65px;
+  margin: 0px 25px;
+}
+
+nav ul li a {
+  position: relative;
+  padding: 5px 0;
+  color: #e3e3e3;
+  font-size: 25px;
+}
+
+nav ul li a::before {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: 0;
+  height: 1px;
+  width: 100%;
+  background: #e3e3e3;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.6s ease;
+}
+
+nav ul li a:hover::before {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+label #btn,
+label #cancel {
+  color: #e3e3e3;
+  margin-top: 20px;
+  margin-right: 0;
+  width: 36px;
+  height: 36px;
+  position: fixed;
+  right: 30px;
+  cursor: pointer;
+  display: none;
+}
+
+#check {
+  display: none;
+}
+
+@media (max-width: 944px) {
+  nav ul li a {
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 860px) {
+  nav ul li a {
+    font-size: 17px;
+  }
+
+  label #btn {
+    display: block;
+  }
+
+  nav {
+    background-color: transparent;
+  }
+
+  ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: transparent;
+    top: 65px;
+    left: -100%;
+    text-align: center;
+    transition: all 0.5s;
+  }
+
+  nav ul li {
+    display: block;
+    margin: 70px 0;
+    line-height: 50px;
+  }
+
+  nav ul li a {
+    font-size: 20px;
+  }
+
+  #check:checked ~ ul {
+    left: 0;
+  }
+
+  #check:checked ~ label #btn {
+    display: none;
+  }
+
+  #check:checked ~ label #cancel {
+    display: block;
+  }
+}
