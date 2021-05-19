@@ -1,119 +1,118 @@
 @import url("/css/main.css");
 
-*{
-    box-sizing: border-box;
-    overflow: hidden;
+* {
+  box-sizing: border-box;
+  overflow: hidden;
 }
 
-.menu-bar{
-    background: #202020;
+.menu-bar {
+  background: #202020;
 }
 
-.contact-section{
-    background: #202020;
-    padding: 80px 0;
-    text-align: center;
-    width: 100%;
-    height: 100vh;
-    overflow-y: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.contact-section {
+  background: #202020;
+  padding: 80px 0;
+  text-align: center;
+  width: 100%;
+  height: 100vh;
+  overflow-y: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.inner-section{
-    max-width: 600px;
-    margin: auto;
-    padding: 0px 20px;
+.inner-section {
+  max-width: 600px;
+  margin: auto;
+  padding: 0px 20px;
 }
 
-.contact-section h1{
-    font-family: Nunito, sans-serif;
-    font-size: 20px;
-    color: #848684;
-    margin-bottom: 40px;
-    text-transform: uppercase;
-    letter-spacing: 4px;
-    font-weight: 400;
+.contact-section h1 {
+  font-family: Nunito, sans-serif;
+  font-size: 20px;
+  color: #848684;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-weight: 400;
 }
 
 .name,
 .email,
-.message{
-    font-family: Nunito, sans-serif;
-    background: none;
-    border: none;
-    outline: none;
-    border-bottom: 1px solid;
-    color: #848684;
-    padding: 10px 6px;
-    font-size: 14px;
-    margin-bottom: 40px;
-    transition: .4s ease;
+.message {
+  font-family: Nunito, sans-serif;
+  background: none;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid;
+  color: #848684;
+  padding: 10px 6px;
+  font-size: 14px;
+  margin-bottom: 40px;
+  transition: 0.4s ease;
 }
 
 .name:focus,
 .email:focus,
-.message:focus{
-    background: #363636;
+.message:focus {
+  background: #363636;
 }
 
-.name{
-    float: left;
-    width: 270px;
+.name {
+  float: left;
+  width: 270px;
 }
 
-.email{
-    float: right;
-    width: 270px;
+.email {
+  float: right;
+  width: 270px;
 }
 
-.message{
-    min-width: 100%;
-    max-width: 100%;
-    resize: none;
+.message {
+  min-width: 100%;
+  max-width: 100%;
+  resize: none;
 }
 
-.btn{
-    font-family: Nunito, sans-serif;
-    background: none;
-    color: #70a1ff;
-    border: 1px solid #70a1ff;
-    padding: 12px 40px;
-    text-transform: uppercase;
-    font-size: 14px;
-    cursor: pointer;
-    transition: .4s linear;
+.btn {
+  font-family: Nunito, sans-serif;
+  background: none;
+  color: #70a1ff;
+  border: 1px solid #70a1ff;
+  padding: 12px 40px;
+  text-transform: uppercase;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.4s linear;
 }
 
-.btn:hover{
-    background: #70a1ff;
-    color: #fff;
+.btn:hover {
+  background: #70a1ff;
+  color: #fff;
 }
 
 @media screen and (max-width: 600px) {
-    .name,
-    .email{
-        width: 100%;
-    }
+  .name,
+  .email {
+    width: 100%;
+  }
 }
 
 @media (max-width: 860px) {
-    ul {
-      position: fixed;
-      width: 100%;
-      height: 100vh;
-      background: #202020;
-      top: 65px;
-      left: -100%;
-      text-align: center;
-      transition: all 0.5s;
-    }
-  
-    nav ul li {
-      display: block;
-      margin: 120px 0;
-      line-height: 90px;
-    }
+  ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #202020;
+    top: 65px;
+    left: -100%;
+    text-align: center;
+    transition: all 0.5s;
   }
 
+  nav ul li {
+    display: block;
+    margin: 120px 0;
+    line-height: 90px;
+  }
+}
